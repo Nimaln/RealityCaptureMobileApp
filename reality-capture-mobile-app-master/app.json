@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "reality-capture-mobile-app",
+    "description": "A project using Autodesk Forge APIs to process 2D images into 3D viewables.",
+    "slug": "reality-capture-mobile-app",
+    "privacy": "public",
+    "sdkVersion": "30.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/make-anything.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.autodesk.realitycapturemobileapp",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.autodesk.realitycapturemobileapp"
+    },
+    "githubUrl": "https://github.com/mazerab/reality-capture-mobile-app"
+  }
+}

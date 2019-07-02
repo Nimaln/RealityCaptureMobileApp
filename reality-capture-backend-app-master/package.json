@@ -1,0 +1,55 @@
+{
+  "name": "reality-capture-mobile-sbs",
+  "version": "1.0.0",
+  "description": "AWS Lambda backend app for the reality-capture-mobile app",
+  "main": "app.js",
+  "scripts": {
+    "create": "claudia create --handler lambda.handler --deploy-proxy-api --region us-east-1 --name recap-forge-service --role RCUser --version demo --use-s3-bucket reality-capture-test-pictures",
+    "destroy": "claudia destroy",
+    "setvars": "claudia set-version --version demo --set-env FORGE_APP_ID=1RYZQOedmAhNeGQunctQEHaLfCEtIwlB,FORGE_APP_SECRET=6op8kC0NcvhTVaV7,S3_BUCKET=reality-capture-test-pictures,REDIS_PASSWORD=sciZNSdodbr8bKsvxgeu7LGuE5dXCHO9",
+    "test": "mocha",
+    "update": "claudia update --version demo --use-s3-bucket reality-capture-test-pictures"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazerab/reality-capture-backend-app.git"
+  },
+  "keywords": [
+    "Autodesk",
+    "Forge",
+    "Reality",
+    "Capture",
+    "Node",
+    "JS",
+    "AWS",
+    "Lambda"
+  ],
+  "author": "Bastien Mazeran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mazerab/reality-capture-backend-app/issues"
+  },
+  "homepage": "https://github.com/mazerab/reality-capture-backend-app#readme",
+  "dependencies": {
+    "aws-serverless-express": "^3.3.5",
+    "body-parser": "^1.18.3",
+    "claudia": "^5.4.0",
+    "expo-server-sdk": "^3.2.0",
+    "express": "^4.16.4",
+    "forge-apis": "^0.4.5",
+    "helmet": "^3.16.0",
+    "npm": "^6.9.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "standard": "^12.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-google": "^0.12.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^6.0.2"
+  }
+}

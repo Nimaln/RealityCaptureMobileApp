@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "RCUser",
+    "name": "obj-upload-translate-service",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "bwts9bkjr9"
+  }
+}

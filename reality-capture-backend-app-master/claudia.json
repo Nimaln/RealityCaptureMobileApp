@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "RCUser",
+    "name": "recap-forge-service",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "x06sbhupii"
+  }
+}

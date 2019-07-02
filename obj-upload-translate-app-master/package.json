@@ -1,0 +1,52 @@
+{
+  "name": "obj-upload-translate-app",
+  "version": "1.0.0",
+  "description": "An AWS lambda function to upload an OBJ file to Autodesk Cloud and translate to OBJ to SVF format.",
+  "main": "app.js",
+  "scripts": {
+    "create": "claudia create --handler lambda.handler --deploy-proxy-api --region us-east-1 --name obj-upload-translate-service --role RCUser --version demo --use-s3-bucket reality-capture-test-pictures",
+    "destroy": "claudia destroy",
+    "setvars": "claudia set-version --version demo --set-env FORGE_APP_ID=1RYZQOedmAhNeGQunctQEHaLfCEtIwlB,FORGE_APP_SECRET=6op8kC0NcvhTVaV7,S3_BUCKET=reality-capture-test-pictures,REDIS_PASSWORD=sciZNSdodbr8bKsvxgeu7LGuE5dXCHO9",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "claudia update --version demo --use-s3-bucket reality-capture-test-pictures"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazerab/obj-upload-translate-app.git"
+  },
+  "keywords": [
+    "Autodesk",
+    "Data",
+    "Management",
+    "Derivative",
+    "Model",
+    "API",
+    "Forge"
+  ],
+  "author": "Bastien Mazeran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mazerab/obj-upload-translate-app/issues"
+  },
+  "homepage": "https://github.com/mazerab/obj-upload-translate-app#readme",
+  "dependencies": {
+    "aws-sdk": "^2.421.0",
+    "aws-serverless-express": "^3.3.5",
+    "body-parser": "^1.18.3",
+    "claudia": "^5.4.0",
+    "del": "^4.0.0",
+    "expo-server-sdk": "^3.2.0",
+    "express": "^4.16.4",
+    "forge-apis": "^0.4.5",
+    "helmet": "^3.16.0",
+    "lodash": "^4.17.11",
+    "node-zip": "^1.1.1",
+    "npm": "^6.9.0",
+    "path": "^0.12.7",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "standard": "^12.0.1",
+    "zlib": "^1.0.5"
+  }
+}
