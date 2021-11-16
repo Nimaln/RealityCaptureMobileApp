@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/mazerab/obj-upload-translate-app#readme",
   "dependencies": {
-    "aws-sdk": "^2.421.0",
+    "aws-sdk": "^2.814.0",
     "aws-serverless-express": "^3.3.5",
     "body-parser": "^1.18.3",
     "claudia": "^5.4.0",
